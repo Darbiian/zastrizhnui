@@ -6,14 +6,14 @@ A Django-based weather application that provides weather information and forecas
 
 ```
 weather-app/
-├── weather/                      # Main Django application
-│   ├── migrations/              # Database migrations
+├── weather/                      
+│   ├── migrations/            
 │   │   └── __init__.py
-│   ├── static/                  # Static files (CSS, JS, images)
+│   ├── static/                  
 │   │   ├── css/
 │   │   ├── js/
 │   │   └── images/
-│   ├── templates/              # HTML templates
+│   ├── templates/            
 │   │   ├── base.html
 │   │   ├── home.html
 │   │   ├── login.html
@@ -27,31 +27,31 @@ weather-app/
 │   ├── urls.py
 │   └── views.py
 │
-├── weather_project/            # Django project settings
+├── weather_project/            
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── asgi.py
 │   └── wsgi.py
 │
-├── nginx/                      # Nginx configuration
+├── nginx/                   
 │   ├── Dockerfile
-│   ├── nginx.conf             # Main Nginx configuration
-│   ├── app.conf               # Application-specific Nginx config
-│   └── error_pages/           # Custom error pages
+│   ├── nginx.conf        
+│   ├── app.conf              
+│   └── error_pages/       
 │       ├── 404.html
 │       └── 50x.html
 │
-├── static/                     # Project-wide static files
-├── media/                      # User-uploaded media files
-├── logs/                       # Application logs
+├── static/                   
+├── media/                  
+├── logs/                       
 │
-├── docker-compose.ec2.yml      # Docker Compose for EC2 deployment
-├── docker-compose.fargate.yml  # Docker Compose for ECS Fargate
-├── Dockerfile                  # Main application Dockerfile
-├── requirements.txt            # Python dependencies
-├── .env                        # Environment variables
-└── .dockerignore              # Docker ignore file
+├── docker-compose.ec2.yml     
+├── docker-compose.fargate.yml
+├── Dockerfile                  
+├── requirements.txt           
+├── .env                        
+└── .dockerignore            
 ```
 
 ## Technology Stack
