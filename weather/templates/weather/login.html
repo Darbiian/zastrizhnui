@@ -1,0 +1,28 @@
+{% extends 'weather/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Вхід - Погодний Додаток{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Вхід до системи</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-box-arrow-in-right"></i> Увійти
+                        </button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Немає облікового запису? <a href="{% url 'register' %}">Зареєструватися</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
